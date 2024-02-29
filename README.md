@@ -1,2 +1,2 @@
-# softwae-design
+# software-design
 tanginang buhay toh. 
