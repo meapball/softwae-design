@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a1c6ea;
+    margin: 0;
+}
+
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* splash screen 
+pantayin mo nga yang m logo sa manjaro
+i kennat
+my brain cells, they're gone*/
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.splash-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    margin-left: 10px;
+}
+
+.splash-logo{
+    position: absolute;
+    left: 380px;
+    bottom: 350px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* login page */
+
+.login-logo{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#login-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #a1c6ea;
+}
+
+#login-page h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-right: 150px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+    margin-top: 5px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bold;
+    height: 300px;
+    width: 396px;
+    margin: auto; 
+}
+
+#login-form input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 250px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#login-form input:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+#login-form button {
+    padding: 10px 110px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    font-size: small;
+    text-align: right;
+    margin-left: 128px;
+    margin-top: 10px;
+}
+
+.signup {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Remember me styles 
+if gusto mo mag add ng remember me fucking bullshit, go */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Remember me label styles */
+.remember-me label {
+    margin-left: 10px;
+}
+
+
+/* forgot pw stupid betch */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+/* signup page huhuhuhuuh */
+#signup-page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #a1c6ea;
+}
+
+#signup-page h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-right: 150px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    height: 300px;
+    width: 396px;
+    margin: auto; 
+}
+
+#signup-form input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 250px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#signup-form input:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+#signup-form button {
+    padding: 10px 103px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.login {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
