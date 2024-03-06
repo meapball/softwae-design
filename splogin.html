@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MANJARO</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="intro">
+            <img src="mlogo.png" alt="splash logo" class="splash-logo">
+            <h1 class ="splash-header">
+                <span class="logo">Manjaro</span>
+                <br>
+                <span class="logo">Make Technology Effortless</span>
+            </h1>
+        </div>
+
+        <img src="mlogo.png" alt="login logo" class="login-logo">
+
+        <div id="login-page" class="form-container" style="display: none;">
+            <h1>Login</h1>
+            <p class="welcome">Hi, Welcome to Manjaro.</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text" class="input-field" id="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" class="input-field" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="input-group remember-me">
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+            <p class="signup">Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+        </div>
+
+        <div id="signup-page" class="form-container" style="display: none;">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <input type="text" class="input-field" id="signup-username" placeholder="Username" required>
+                <input type="email" class="input-field" id="signup-email" placeholder="Email" required>
+                <input type="password" class="input-field" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="login">Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+</body>
+</html>
